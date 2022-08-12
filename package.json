@@ -15,7 +15,8 @@
     "test": "mocha --timeout 15000",
     "start": "node scrapers/index.js",
     "coverage": "nyc npm test",
-    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "run-test": "node ./test.js"
   },
   "files": [
     "helpers/",
@@ -32,16 +33,16 @@
   },
   "homepage": "https://github.com/jadkins89/Recipe-Scraper#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "jsonschema": "^1.4.0",
-    "node-fetch": "^2.6.1",
-    "parse-domain": "^2.3.2",
-    "puppeteer": "^9.0.0"
+    "cheerio": "1.0.0-rc.3",
+    "jsonschema": "1.4.0",
+    "node-fetch": "2.6.1",
+    "parse-domain": "2.3.2",
+    "puppeteer": "9.0.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.6",
-    "mocha": "^6.2.1",
-    "nyc": "^14.1.1"
+    "chai": "4.2.0",
+    "coveralls": "3.0.6",
+    "mocha": "6.2.1",
+    "nyc": "14.1.1"
   }
 }
